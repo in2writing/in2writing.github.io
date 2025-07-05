@@ -1,0 +1,229 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+
+
+/* 
+  potential color palette
+  https://coolors.co/7fc8f8-f9f9f9-5aa9e6-e0bb00-ff6392
+*/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #FBFAEE; /*#FBF3EE;*/
+  --color-text-main: #000000;
+  --color-primary: #FF6392;  
+  --color-secondary: #FFE45E;  
+  --color-blue: #5C95FF;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("assets/fonts/Grotesk-Regular.otf")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("assets/fonts/Grotesk-Bold.otf")
+    format("opentype");
+}
+
+
+body {
+  font-family: HK Grotesk;
+  background-color: var(--color-bg);
+}
+
+a {
+  color: var(--color-blue);
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Very light scaling for our illustration */
+.title {
+  color: var(--color-primary);
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: max(5vw, 3em);
+  text-align: center;
+  margin: 0;
+}
+
+.subtitle {
+  color: var(--color-primary);
+  font-size: max(1vw, 1em);
+  text-align: center;
+}
+
+/* Instructions */
+.details {
+  max-width: 800px;
+  margin: 1rem auto 0;
+}
+
+.jumpto {
+  max-width: 800px;
+  margin: 1rem auto 0;
+  background-color: var(--color-bg);
+  margin-top: 0;
+}
+
+/* Subheading */
+h2 {
+  color: var(--color-primary);
+  font-size: 1.4em;
+}
+
+h3 {
+  color: var(--color-primary);
+  font-size: 1em;
+}
+
+p.emojis {
+  font-size: 4em;
+  text-align: center;
+}
+
+p.caption {
+  text-align: center;
+  font-size: .8em;
+}
+
+.name {
+  font-weight: bold;
+  margin: 0px;
+}
+
+.speakertitle {
+  margin: 0px;
+  font-style: italic;
+}
+
+div.org-col {
+  text-align: center;
+  font-size: .9em;
+}
+
+div.speaker-col {
+  text-align: center;
+  font-size: .9em;
+}
+
+table {
+  max-width: 100%;
+  font-size: 1em;
+  font-weight: normal;
+/*   text-align: center; */
+}
+img.header {
+  max-height: 200px;
+/*   height: 100%; */
+/*   width: 100%; */
+}
+
+div.headers {
+  font-size: .8em;
+}
+
+img.headshot {
+  max-width: 96px;
+}
+
+img.speakerheadshot {
+  max-height: 150px;
+}
+
+img.sponsor {
+  width: 100%;
+  max-width: 200px;
+}
+
+.fin {
+  opacity: .5;
+}
+
+.papertitle {
+  font-weight: bold;
+}
+
+.text-link {
+  font-size: .8em;
+  cursor: pointer;
+}
+
+.best {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.cross {
+  color: var(--color-primary);
+}
+
+.greyed-out {
+  color: grey;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.nav-header-links {
+  color: var(--color-primary);
+}
+
+ul.no-bullet {
+  list-style-type: none;
+}
+
+/*  Scheduling */
+
+
+
+td {
+  padding-left: 2em;
+}
+
+.time-cell {
+  font-weight: bold;
+  padding-left: 0em;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}

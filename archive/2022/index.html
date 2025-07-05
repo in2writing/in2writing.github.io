@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <title>In2Writing</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Meta tags for SEO and social sharing -->
+    <link rel="canonical" href="https://in2writing.glitch.me/" />
+    <meta
+      name="description"
+      content="The First Workshop on Intelligent and Interactive Writing Assistants"
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="in2writing" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="hhttps://in2writing.glitch.me/" />
+    <meta
+      property="og:description"
+      content="The First Workshop on Intelligent and Interactive Writing Assistants"
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      
+      <div class="content" role="main">
+        
+        <div class="details">
+          <nav class="navbar fixed-top jumpto">
+            Jump to:
+          </nav>
+          <img
+            src="../../assets/images/In2Writing-pinkblack.png"
+            class="img-fluid mx-auto d-block mt-5"
+            style="max-width: 300px"
+          />
+
+          <h2 class="subtitle mt-2 mb-4">
+            The First Workshop on Intelligent and Interactive Writing Assistants
+          </h2>
+          <p>
+            The purpose of this interdisciplinary workshop is to bring together
+            researchers from the natural language processing (NLP) and
+            human-computer interaction (HCI) communities as well as industry
+            practitioners and professional writers to discuss innovations in
+            building, improving, and evaluating intelligent and interactive
+            writing assistants. We plan to alternate our workshop venue between
+            an NLP conference and a HCI conference every year to facilitate
+            collaboration.
+          </p>
+          <p>
+            The first 100 participants get a free premium subscription to
+            <a href="https://www.grammarly.com/">Grammarly</a> and
+            <a href="https://www.wordtune.com/">Wordtune</a>.
+          </p>
+          <p>
+            <strong>
+              This year the workshop will be held at
+              <a href="https://www.2022.aclweb.org/">ACL 2022</a> in Dublin,
+              Ireland on the 26th of May, 2022.
+            </strong>
+          </p>
+          <p>
+            The workshop is in a remote/in-person hybrid format. Join <a href="https://us06web.zoom.us/j/82602860601?pwd=K1M2ZkQ5UnF5MTBYejlQeTdtaFY3Zz09">zoom</a> for the workshop (please turn on video, but mute audio upon entry)!
+          </ul>
+          </p>
+
+          <h2 class="text-center mb-5">
+            <strong>
+              ~*~ <a href="papers.html">Accepted Papers</a> ~*~</strong
+            >
+          </h2>
+        
+
+          
+          <h2>Important Dates</h2>
+          <ul>
+            <li class="fin">Paper submission deadline: <b><strike>28 February</strike> March 9, 2022</b></li>
+            <li class="fin">Paper acceptance notification: <b>26 March, 2022</b></li>
+            <li class="fin">Paper camera-ready deadline: <b>10 April, 2022</b></li>
+            <li>Workshop date: <b>26 May, 2022</b></li>
+          </ul> -->
+
+          <h2 id="Invited Speakers">Invited Speakers</h2>
+          <div class="container">
+            <div class="row speakers"></div>
+          </div>
+          <!--           <h2>Call for Papers</h2>
+          <p>
+            The purpose of this interdisciplinary workshop is to discuss
+            innovations in building, improving, and evaluating intelligent and
+            interactive writing assistants. To this end, we hope to bring
+            together researchers from the natural language processing (NLP) and
+            human-computer interaction (HCI) communities, as well as industry
+            practitioners and professional/amateur writers. We have seen an
+            enormous shift in the ability of intelligent writing assistants in
+            the past decade, from spell checkers to paraphrasers to content
+            generators. We anticipate many new forms of human-machine
+            collaborative writing, where machines provide creative and
+            innovative support to enhance human potential, to appear in the near
+            future.
+          </p>
+          <p>
+            In recent years, AI-powered writing assistants have gained
+            increasing traction, along with the development of pre-trained large
+            language models such as GPT-3 (Brown et al., 2020) and Jurassic-1
+            (Lieber et al., 2021). A growing body of NLP research is improving
+            and scaling up such models for text generation. However, the common
+            practice for building and evaluating these models in NLP has several
+            major shortcomings in the context of human-machine collaborative
+            writing: (1) it does not take into account the bidirectional,
+            interactive nature of human-machine interactions, (2) the
+            standardized evaluation metrics or “gold standards” do not exist for
+            open-ended tasks such as creative writing, and (3) it overlooks
+            real-world deployment challenges and human aspects of evaluation
+            such as usability, engagement, ownership, and satisfaction.
+          </p>
+          <p>
+            To envision more supportive intelligent and interactive writing
+            assistants, we invite researchers from the NLP and HCI communities,
+            industry practitioners, and writers to participate in this workshop.
+            Leveraging various NLP techniques while accounting for their
+            limitations requires researchers, practitioners, and writers to
+            holistically understand language model capabilities as well as their
+            strengths and weaknesses in various collaborative contexts. Through
+            this workshop, we hope to enhance our understanding of the design
+            and evaluation of writing assistants and the creative process
+            between humans and machines, while being informed by the needs of
+            writers.
+          </p>
+          <p>
+            <strong>
+              We invite submissions from the NLP and HCI communities as well as
+              industry practitioners and professional writers on the topic of
+              intelligent writing assistants: those that discuss innovations in
+              building, improving, and evaluating intelligent and interactive
+              writing assistants.
+            </strong>
+          </p>
+          <p>Specific topics include, but not limited to:</p>
+          <ul>
+            <li>
+              Combining NLP techniques (e.g. style transfer, text planning,
+              controllability) with interaction paradigms between users and
+              writing assistants (e.g. interfaces, iterative processes,
+              feedback), such as a formality style transfer system for revising
+              professional communications
+            </li>
+            <li>
+              Assistance on different stages of the writing process (e.g.
+              planning, revising), different types of writing (e.g. expository,
+              persuasive), and different applications (e.g. journalism, fiction)
+            </li>
+            <li>
+              Evaluation methodologies for writing assistants, writing process,
+              and resultant text
+            </li>
+            <li>
+              Addressing underrepresentation of languages, types of writers
+              (e.g. vernacular variations), and writing tasks for targeted
+              writing assistance (note that for non-English systems, we request
+              that the figures and examples be translated into English prior to
+              review)
+            </li>
+            <li>
+              Writing assistant ownership issues, including legal issues with
+              copyright and psychological sense of ownership
+            </li>
+            <li>
+              Practical challenges for building real-world systems such as
+              Grammarly and WordTune (e.g. latency, near-perfect quality,
+              personalization, and evolution of language)
+            </li>
+            <li>
+              User studies or ethnographic studies of writers who use writing
+              assistants
+            </li>
+            <li>
+              Demonstration of simple prototypes of intelligent interfaces or
+              design sketches
+            </li>
+          </ul>
+
+          <h2>Submitting</h2>
+          <p>
+            We invite both regular paper submission and system demos up to 8
+            pages, but they do not need to be always 8 pages long. There is no
+            formal distinction between long and short papers; instead, we expect
+            the paper length to be commensurate with the contributions.
+            Specifically, we allow four types of submissions:
+          </p>
+          <ul>
+            <li>
+              <strong>Standard workshop papers</strong>: Submissions describing
+              substantially original research not previously published in other
+              venues.
+            </li>
+            <li>
+              <strong>Extended abstracts</strong>: Submissions describing
+              preliminary but interesting ideas or results not previously
+              published in other venues.
+            </li>
+            <li>
+              <strong>Cross-submissions</strong>: Papers on relevant topics that
+              have previously been accepted for publication in another venue.
+            </li>
+            <li>
+              <strong>Demonstration</strong>: Demonstrations of all forms. Can
+              be research and academic demos, but also those of products,
+              interesting and creative projects, and so forth.
+            </li>
+          </ul>
+          <p>
+            Note that submissions totally irrelevant to the topics will not be
+            reviewed.
+          </p>
+          <p>
+            Only standard workshop papers will be included in the proceedings as
+            archival publications. Dual submission with other conferences is allowed. If the
+            paper is accepted to both the other conference and the workshop, it will be
+            considered as a cross-submission and will not be a part of the
+            workshop proceedings. If it gets rejected from the other conference and accepted to
+            the workshop and you want us to consider it as a standard workshop
+            paper which will be included in the proceedings, please contact us
+            to let us know.
+          </p>
+          <p>
+            All papers except cross submissions will go through double blind
+            peer review. Cross submissions will go through single blind peer
+            review. If the paper is accepted, at least one of the authors must
+            attend the workshop to present the work.
+          </p>
+          <p>
+            Submissions should follow the
+            <a href="https://acl-org.github.io/ACLPUB/formatting.html"
+              >ACL’s Paper Formatting Guidelines</a
+            >. Latex templates for the workshop can be found
+            <a
+              href="https://github.com/acl-org/acl-style-files/tree/master/latex"
+              >here</a
+            >. Please submit your paper to OpenReview by February 28th, 2022
+            AOE:
+            <a
+              href="https://openreview.net/group?id=aclweb.org/ACL/2022/Workshop/In2Writing"
+              >submit here</a
+            >.
+          </p>
+          <p>
+            Questions about submission can be directed to <a href="mailto:in2writing.workshop@gmail.com">in2writing.workshop@gmail.com</a>.
+          </p> -->
+          <h2 id="Schedule">Schedule</h2>
+          <p>
+            Timezone: Irish Standard Time - GMT+1<br/>
+            Location: Liffey Meeting Room 1 (Floor 1)
+          </p>
+          <p>
+            🗣️ - speaker will be in person (broadcast to zoom)<br>
+            💻 - speaker will be joining remotely (broadcast to Dublin)
+      </p>
+      <p>
+            Unless otherwise stated, everything will be broadcast via <a href="https://us06web.zoom.us/j/82602860601?pwd=K1M2ZkQ5UnF5MTBYejlQeTdtaFY3Zz09">zoom</a>.
+          </p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 14%;">Time</th>
+                <th scope="col">Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">09:00-09:10AM</th>
+                <td>
+                  <b>🗣️ Opening remarks - Mina Lee</b> (organizer)<br>
+                  Introduction to workshop. Overview of goal, submitted papers, and acknowledgements.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">09:10-10:10</th>
+                <td>
+                  <b>🗣️ Invited talk - Claire L. Evans</b> (professional writer)<br>
+                  <i>How to Chain Trip</i><br>
+                  In 2018 the pop group YACHT went into the studio to record their seventh album, Chain Tripping. Seeking a challenge, they'd decided to investigate machine learning as a compositional tool, creating their own method at the intersection of DIY and high-tech. The lyrics for Chain Tripping, created in collaboration with the creative technologist Ross Goodwin, emerged from a character-recurrent neural network trained on a corpus of about two million song lyrics. This model generated massive amounts of lyrical data at a range of temperatures—a formless abundance of raw material for the creation of new songs. In her talk “How To Chain Trip,” YACHT’s Claire L. Evans explains the band’s approach to this unconventional material, and how she—as a songwriter—drew inspiration from Dadaist poetry and David Bowie to create ear-worms from this indeterminacy.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">10:10-10:30</th>
+                <td>
+                  <b>💻 Invited talk - Daniel Gissin</b> (industry)<br>
+                  <i>Wordtune - An AI Writing Companion</i><br>
+                  The space of AI writing assistants today can be split into three main clusters - assistants that correct, assistants that write and assistants that rewrite. Wordtune falls mostly under the third category, leaning on paraphrasing as the main driver for writing improvement. In this talk, I’ll describe Wordtune and explain our rationale behind focusing on rewriting, which helps writers improve their writing while keeping them at the driver’s seat.
+                </td>
+              </tr>
+              <tr class="table-active">
+                <th scope="row">10:30-11:00</th>
+                <td><b>Coffee break</b> <br>in person - make some friends <br>remote - themed breakout rooms on: 1) artistic pursuits; 2) professionalized contexts; and 3) general purpose v. custom tools</td>
+              </tr>
+              <tr>
+                <th scope="row">11:00-11:15</th>
+                <td>
+                  <b>🗣️ Invited talk - Melissa Roemelle</b> (academia)<br>
+                  <i>Tell me without telling me: evaluating AI writing assistants from user interaction</i><br>
+                  A conventional approach to evaluating text generation within writing assistance applications is to ask users: “How helpful was this text?" But we can also measure helpfulness implicitly from users’ interaction with the generated text without this explicit feedback. I’ll describe how I’ve applied this analysis in my research and how it provides particular insight into developing more helpful writing assistants.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">11:15-11:30</th>
+                <td>
+                  <b>🗣️ Invited talk - Elizabeth Clark</b> (academia)<br>
+                  <i>Human-Machine Collaborative Writing for Better NLG Evaluation</i><br>
+                  Human evaluations of generated text are increasingly difficult to collect, in part because of the improving fluency of natural language generation (NLG) models. While a typical human evaluation task asks evaluators to rate a static set of output, human-machine collaborative writing systems allow people to directly interact with generated text. In this talk, I will demonstrate how a collaborative writing system can be used to evaluate NLG models in a downstream task. I will also discuss challenges in NLG evaluation today and how evaluation through collaborative writing addresses some of these challenges.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">11:30-12:30PM</th>
+                <td>
+                  <b>💻 Panel discussion  - Understanding the impact of writing
+                  assistants on ownership, authenticity, originality, &
+                  confidence</b> <br>
+                  Jill Burstein, Dashiel Carrera, Ekaterina Kochmar, and Thiemo Wambsganss.
+                </td>
+              </tr>
+              <tr class="table-active">
+                <th scope="row">12:30-02:00</th>
+                <td><b>Lunch break</b></td>
+              </tr>
+              <tr>
+                <th scope="row">02:00-03:00</th>
+                <td>
+                  <b>🗣️ Invited talk - Lillian-Yvonne Bertram</b> (professional writer)<br>
+                  <i>Ars Combinatoria: A Poetics of Computation</i><br>
+                  While the majority of all writing today can be considered "digital" in some way, given the predominance of writing and composition on computers and other machines, the practice of writing with computation and generating creative texts spans at least the past 60 years. Early computer-generated writing experiments included genres like chatbots, poems, and letters. In this talk, poet Lillian-Yvonne Bertram will discuss their introduction to using computation for poetry and how computation, machine learning, and other aspects of NLP play a role in their writing and composition practice.
+                </td>
+              </tr>
+              <tr class="table-active">
+                <th scope="row">03:00-03:30</th>
+                <td><b>Coffee break</b> <br>in person - make some friends <br>remote - themed breakout rooms on: 1) creativity; 2) authenticity; and 3) evaluation</td>
+              </tr>
+              <tr>
+                <th scope="row">03:30-04:00</th>
+                <td>
+                  <b>🗣️ Invited talk - Timo Mertens</b> (industry)<br>
+                  <i>Towards Super-human Communication Assistants</i><br>
+                  Communication is a fundamental human need that drives meaningful connection and results—but it’s hard to get right. Even basic grammar and spelling are challenging, and while the English language is heavily rule-based, there are a lot of grey areas. Getting only the foundations of writing right is no longer an option as our remote-first reality commands more asynchronous communication. This talk will explore how an human-in-the-loop  approach to Machine Learning can empower communication assistance to overcome complex communication challenges.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">04:00-04:15</th>
+                <td>
+                  <b>💻 Best paper talk - Wanyu Du and Zae Myung Kim</b> (academia)<br>
+                  <i>Read, Revise, Repeat: A System Demonstration for Human-in-the-loop Iterative Text Revision</i><br>
+                  In this work, the authors present a human-in-the-loop iterative text revision system, Read, Revise, Repeat (R3), which aims at achieving high quality text revisions with minimal human efforts by reading model-generated revisions and user feedbacks, revising documents, and repeating human-machine interactions. 
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">04:15-05:15</th>
+                <td>
+                  <b>🗣️/💻 Panel discussion - Bridging NLP and HCI to design,
+                  build, and evaluate writing assistants</b> <br>
+                  Courtney Napoles, Melissa Roemmele, Qian Yang, and Sherry Wu
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">05:15-05:17</th>
+                <td>
+                  <b>🗣️ Closing remarks - Vipul Raheja</b> (organizer) <br>
+                  
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">05:17-06:00</th>
+                <td>
+                  <b>Demo and poster session</b> <br>
+                  in person - normal poster session (location: Forum) <br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="Sponsors">Sponsors</h2>
+          <div class="row sponsors"></div>
+
+          <br />
+
+          <h2 id="Organizers">Organizers</h2>
+          <p>
+            You can contact the organizers by emailing
+            <a href="mailto:in2writing.workshop@gmail.com"
+              >in2writing.workshop@gmail.com</a
+            >.
+          </p>
+          <div class="container">
+            <div class="row organizers"></div>
+          </div>
+          <h2 id="Program Committee">Program Committee</h2>
+          <ul class="pc"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
