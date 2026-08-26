@@ -179,9 +179,6 @@ const editions = [{
 }, {
   "year": 2024,
   "description": "@CHI 2024"
-}, {
-  "year": 2025,
-  "description": "@ACL 2025"
 }
 ];
 
