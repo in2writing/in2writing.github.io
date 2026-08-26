@@ -111,7 +111,7 @@ $(document).ready(function () {
     //   p.append(' <span class="cross">~cross submission~</span> ');
     // } 
     
-    var href = 'assets/papers/paper' + paper.number.toString() + '_2025.pdf';
+    var href = '../../assets/papers/paper' + paper.number.toString() + '_2025.pdf';
     
     // Overwrite href with arxiv link if provided
     if (paper.hasOwnProperty('arxiv')){
