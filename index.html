@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!--
-      This is the page head - it contains info the browser uses to display the page
-      You won't see what's in the head in the page
-      Scroll down to the body element for the page content
-    -->
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+    <link rel="icon" href="assets/images/In2Writing-pinkblack.png" />
 
     <title>In2Writing</title>
 
@@ -26,10 +15,10 @@
     />
 
     <!-- Meta tags for SEO and social sharing -->
-    <link rel="canonical" href="https://in2writing.glitch.me/" />
+    <link rel="canonical" href="https://in2writing.github.io/" />
     <meta
       name="description"
-      content="The Fifth Workshop on Intelligent and Interactive Writing Assistants"
+      content="Enriching Writing Ecosystems at The Fifth Workshop on Intelligent and Interactive Writing Assistants, co-located with UIST 2026 in Detroit, MI"
     />
     <meta name="robots" content="index,follow" />
     <meta property="og:title" content="in2writing" />
@@ -37,11 +26,11 @@
     <meta property="og:url" content="https://in2writing.github.io/" />
     <meta
       property="og:description"
-      content="The Fifth Workshop on Intelligent and Interactive Writing Assistants"
+      content="Enriching Writing Ecosystems at The Fifth Workshop on Intelligent and Interactive Writing Assistants, co-located with UIST 2026 in Detroit, MI"
     />
     <meta
       property="og:image"
-      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png"
+      content="https://in2writing.github.io/assets/images/In2Writing-pinkblack.png"
     />
     <meta name="twitter:card" content="summary" />
 
@@ -51,7 +40,6 @@
     <!-- Import the webpage's javascript file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js" defer></script>
-    <script src="script_papers.js" defer></script>
 
   </head>
   <body>
@@ -67,28 +55,33 @@
           />
 
           <h2 class="subtitle mt-2">
-            The <strong>Fourth</strong> Workshop on Intelligent and Interactive
+            Enriching Writing Ecosystems at
+            <br />
+            The <strong>Fifth</strong> Workshop on Intelligent and Interactive
             Writing Assistants
           </h2>
-          
-    
-<!--           <h2><b>Information Coming Soon</b> </h2>
-          <div>
-             looking for more? see our past events through the links above
-          </div> -->
 
           <p>
-<!--          a hybrid event     -->
             <center>co-located with</center>
           </p>
 
           <h2 class="subtitle mt-2">
-            <a href="https://2025.naacl.org/">
-              The 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2025)
+            <a href="https://uist.acm.org/2026/">
+              The 39th Annual ACM Symposium on User Interface Software and
+              Technology (UIST 2026)
             </a>
-            
-            <div> Albuquerque, NM (in-person only)</div>
+
+            <div>Detroit, MI</div>
           </h2>
+
+          <div class="text-center">
+            <b>Monday, November 2, 2026 &middot; 9:00 AM &ndash; 5:00 PM</b>
+            <div>
+              Detroit Marriott at the Renaissance Center, 400 Renaissance
+              Center, Detroit, MI 48243
+              <a href="https://maps.app.goo.gl/xvBWZLHLeFnqbnWY7" title="View on Google Maps">📍</a>
+            </div>
+          </div>
 
           <br />
 
@@ -101,8 +94,6 @@
             processing (NLP) communities by alternating our workshop venue
             between HCI and NLP every year.
           </p>
-
-
 
           <p class="caption">
             ⬇️ Examples of new forms of human-machine collaborative writing. ⬇️
@@ -149,256 +140,184 @@
               </div>
               <div class="col-md-3">
                 <img
-                  src=" assets/images/dramaton.png"
+                  src="assets/images/craftingthought.png"
                   class="header img-fluid"
                 />
                 <p>
-                  <a href="https://arxiv.org/abs/2209.14958/">Dramaton</a>
-                  <br />(Mirowski et al., arxiv 2022)
+                  <a href="https://aclanthology.org/2025.in2writing-1.5/"
+                    >From Crafting Text to Crafting Thought</a
+                  >
+                  <br />(Liu &amp; August, In2Writing 2025)
                 </p>
               </div>
             </div>
           </div>
 
-          <h2>Important Dates</h2>
+          <h2 id="About">About the Workshop</h2>
+          <p>
+            Writing assistants have become increasingly multidimensional and
+            sophisticated, fueled by advances in AI and interaction design. As
+            this landscape expands, it is timely to consider how different
+            underlying technologies (e.g., text analytics, LLMs), interaction
+            designs (e.g., next-word prediction, chatbots, material
+            interaction), and design goals (e.g., productivity, friction) fit
+            together into broader ecosystems of tools and workflows. Future
+            writing tools should support writers' idiosyncratic, multi-tool, and
+            social writing processes.
+          </p>
+          <p>
+            In this hands-on, systems-centric workshop, we challenge the UIST
+            community to explore and develop ecosystems of writing assistants
+            through the lens of <b>interoperability</b>. Participants will
+            engage in a highly interactive tool-swapping collaborative writing
+            exercise where research and commercial systems are used
+            side-by-side. Through playful provocation and intentional
+            defamiliarization, participants will identify system interplay
+            friction and collaboratively outline design guidelines for building
+            adaptable writing assistants that enrich diverse workflows and
+            integrate into lasting technological ecosystems.
+          </p>
+          <p>
+            Now in its fifth iteration, our workshop seeks to facilitate
+            discussions on designing and building cohesive writing
+            <i>ecosystems</i> &mdash; bridging technical systems, design values,
+            and community paradigms. Our objectives are to bridge
+            interdisciplinary communities; to critique the flexibility,
+            interoperability, and normative ground of current tools; and to
+            envision the future design and study of writing assistants amongst a
+            flourishing landscape. In addition to HCI and NLP research, we
+            welcome participants from fields such as the Education Sciences,
+            English and Rhetoric, and Linguistics.
+          </p>
+
+          <p>The day is built around the following activities:</p>
           <ul>
-            <li class="">
-                <s>Paper submission deadline:
-                <b
-                  >28 February, 2025 11:59PM
-                  <a href="https://time.is/Anywhere_on_Earth">AoE</a></b
-                >
-                (no extensions!)</s>
+            <li>
+              <b>Opening and Introductions.</b> Organizers welcome participants
+              and provide a workshop overview. Participants briefly introduce
+              themselves and state their expectations for the day.
             </li>
-            <li class="">
-                <s>Paper acceptance notification: <b>12 March, 2025</b></s>
+            <li><b>Keynote(s) details coming soon!</b></li>
+            <li>
+              <b>Tool Swapping and Live Writing Activity.</b> The core of the
+              workshop is a live tool-swapping exercise modeled after
+              collaborative party games (e.g., "Frantic Fanfic"). Participants
+              sit at tables equipped with a curated mix of writing systems and
+              prototypes, then continue each other's texts using a completely
+              different interface each round &mdash; so that friction between
+              systems can be observed in real time.
             </li>
-            <li>Workshop date: <b>May 4, 2025</b></li>
+            <li>
+              <b>Small Group Discussions.</b> Tables critically discuss and
+              document their collective tool-handling and writing experiences,
+              assessing both technical breakdowns and the experiential effects
+              of multiple tool usage.
+            </li>
+            <li>
+              <b>Expert Panel.</b> A panel of interdisciplinary researchers and
+              practitioners discusses the challenges of designing towards
+              plurality, building on what participants have just experienced.
+            </li>
           </ul>
-          
-          <h2 id="Sponsors">Sponsors</h2>
-          <div class="row sponsors"></div>
+          <p>
+            Participants are encouraged to bring prototypes and commercial tools
+            on their own computers. Organizers will collect tools from past
+            research and from open-source repositories, and will host a
+            text-sharing application to mediate the activity.
+          </p>
+
+          <h2 id="Participate">Participate</h2>
+          <p>
+            <b>Joining the workshop does not require a paper submission.</b> To
+            take part, sign up for the workshop when you register for
+            <a href="https://uist.acm.org/2026/">UIST 2026</a>. You can also
+            register for the workshop on its own, without registering for the
+            full conference.
+          </p>
+          <p>
+            We will also post a short participant form here shortly.
+            <b>Coming soon.</b>
+          </p>
+          <p>
+            Questions? Email us at
+            <a href="mailto:in2writing.workshop@gmail.com"
+              >in2writing.workshop@gmail.com</a
+            >.
+          </p>
+
+          <h2 id="Schedule">Schedule</h2>
+          <div>
+            <b
+              >Location: Detroit Marriott at the Renaissance Center, 400
+              Renaissance Center, Detroit, MI 48243</b
+            >
+            <a href="https://maps.app.goo.gl/xvBWZLHLeFnqbnWY7" title="View on Google Maps">📍</a>
+          </div>
+          <div><i>* The schedule below is tentative and subject to change.</i></div>
+          <table>
+            <tr>
+              <td class="time-cell">09:00 - 09:30am</td>
+              <td>Welcome and meet-and-greet with participants</td>
+            </tr>
+            <tr>
+              <td class="time-cell">09:30 - 10:30am</td>
+              <td>Keynote <i>(coming soon!)</i></td>
+            </tr>
+            <tr>
+              <td class="time-cell">10:30 - 12:30pm</td>
+              <td>Interactive tool-swapping activity</td>
+            </tr>
+            <tr>
+              <td class="time-cell">12:30 - 2:00pm</td>
+              <td>Lunch</td>
+            </tr>
+            <tr>
+              <td class="time-cell">02:00 - 3:00pm</td>
+              <td>Follow-up discussions from the group activity</td>
+            </tr>
+            <tr>
+              <td class="time-cell">03:00 - 4:00pm</td>
+              <td>Keynote <i>(coming soon!)</i></td>
+            </tr>
+            <tr>
+              <td class="time-cell">04:00 - 5:00pm</td>
+              <td>Panel discussion</td>
+            </tr>
+          </table>
 
           <br />
 
-    
- 
+          <h2 id="Speakers">Speakers</h2>
+          <p><b>Coming soon!</b></p>
 
-          <h2 id="Schedule">Schedule</h2>
-          
-
-
-          <div><b>Location: 19 - Isleta/21 - Jemez </b></div>
-          <div> <i>* Note that the poster session will be held in the same room as the talks </i></div>
-          <table>
-            <tr>
-                <td class="time-cell"> 09:00 - 09:05am </td> <td>Welcome</td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 09:05 - 10:00am </td> <td>	Keynote: N. Katherine Hayles</td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 10:00 - 10:20am </td> <td>Best Paper Award Talk <i>(From Crafting Text to Crafting Thought)</i></td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 10:20 - 10:40am </td> <td>Diversity Award Talk <i>(ARWI: Arabic Write and Improve)</i></td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 10:30 - 11:00am </td> <td>	NAACL Coffee Break</td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 11:00 - 12:00pm </td> <td> 	Poster Session </td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 12:00 - 12:20pm </td> <td> 	Invited Speaker: Max Kreminsky </td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 12:20 - 2:00pm </td> <td>	Lunch Break </td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 02:00 - 2:20pm </td> <td>	Invited Speaker: Carly Schnitzler </td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 02:20 - 2:40pm </td> <td>	Invited Speaker: Wei Xu </td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 02:40 -	3:40pm </td> <td> 	Panel with all invited speakers </td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 03:40 - 3:50pm </td> <td>	Closing </td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 03:30 - 4:00pm </td> <td>	NAACL Coffee Break </td>
-            </tr>
-            <tr>
-                <td class="time-cell"> 04:00 - 5:00pm </td> <td>	Social Hour </td>
-            </tr>
-          </table>
-          
-          </br>
-          <h2>
-            Speakers
-          </h2>
-          <ul>
-              <li><h3><b>Keynote Speaker: <a href="https://nkhayles.com/">Dr. N Katherine Hayles</a></b></h3>
-              <ul class="no-bullet">
-                <li><img class="img-thumbnail headshot"  src="assets/images/hayles.jpg">
-                <li><h3><i>Communicating with Aliens:  Large Language Model as Writer/Critic/Reader</i></h3></li>
-                <li>The arrival of Large Language Models (LLMs) has presented literary studies with unparalleled opportunities and challenges.  LLMs communicate using human languages, an event never before accomplished; nevertheless, the ways in which LLMs achieve human-equivalent texts differ profoundly from how humans understand and employ language.  Amidst the familiarity of machine-authored language lurks an alien sensibility based on mathematical abstractions, algorithmic processes, and deeply nonhuman embodiments.  To grasp the significance of this alienness-in-familiarity, it is crucially important for users to understand what might be called the world-view, or umwelt, of the machine.  Critics who argue that LLM texts have no meaning suffer from an anthropocentric bias that mistakenly insists the only meanings that count must be human-centric.  This talk argues for a more productive approach that evaluates meaning-making within the context of the machine umwelt, comparing and contrasting it with human meaning productions.</li> 
-              </ul>
-            </li>
-            <li><h3><b>Speaker: <a href="https://mkremins.github.io/">Max Kreminsky</a></b></h3>
-              <ul class="no-bullet">
-                <li><img class="img-thumbnail headshot"  src="assets/images/kreminski.jpeg">
-                <li><h3><i>Interaction Techniques for Sculpting Expressive Text</i></h3></li>
-                <li>Writing today goes hand in hand with typing. But what if writing was more like sculpting, or painting, or playing with toys? I discuss the wide range of potential writing modalities that might be enabled by natural language processing technologies – many of which allow texts to be squashed, stretched, split, merged, mutated, and warped in ways that bear little resemblance to traditional writing. New interaction techniques based on these new technological affordances, I argue, can complement more familiar processes of text production; promote the discovery of fortuitous but unlikely phrasings; and push expressive language out beyond its usual bounds. From the “new interfaces for textual expression” introduced by computational poet Allison Parrish to the playful creative writing instruments now under development in my lab, I explore a variety of strange computation-supported approaches to writerly interaction with expressive text.</li>
-              </ul>
-            </li>
-            <li><h3><b>Speaker: <a href="https://krieger.jhu.edu/writing-program/directory/carly-schnitzler/">Carly Schnitzler</a></b></h3>
-              <ul class="no-bullet">
-                <li><img class="img-thumbnail headshot"  src="assets/images/CarlySchnitzler.jpg">
-                <li><h3><i>Articulating Personal Voice with the Machine: Revision and Iteration with LLMs in Narrative Writing</i></h3></li>
-                <li>I have conducted an IRB-approved study in which students share their work from the final personal narrative assignment in my Reintroduction to Writing: Digital Doppelganger course. In this assignment, students explore a uniquely human topic of their choosing and co-compose essays with LLMs over multiple iterative drafts, along with a revision reflection written without use of AI tools. The model for this assignment is Vauhini Vara’s essay “Ghosts.” Through the writing process, we examine how authorial power shifts with technology use, the utility and limitations of these tools, and the myriad ethical questions that arise with the use of AI in writing. This paper synthesizes findings from student reflections using a grounded theory methodology and advocates, as others have, that iteration and revision are central to students’ understandings of their own personal voices in writing. I argue LLMs can provide an opportunity to expand these writing processes and, when critically introduced and interrogated, can successfully intervene in a student-writer’s process of understanding their own personal voice.</li>
-              </ul>
-            </li>
-            <li><h3><b>Speaker: <a href="https://cocoxu.github.io/">Wei Xu</a></b></h3>
-              <ul class="no-bullet">
-                <li><img class="img-thumbnail headshot"  src="assets/images/wei_xu.png">
-                <li><h3><i>AI for All - Advancing Text Simplification and Reducing Cultural Bias in LLMs</i></h3></li>
-                <li>The rapid growth of AI has increased information access, but linguistic complexity remains a barrier for many. This talk will focus on recent advances in Text Simplification, which aims to make written content more accessible while preserving its original meaning. Simplification can play a key role in broadening access to knowledge and countering misinformation, particularly for children and non-native speakers. I will present LENS :mag_right:, a learnable metric that improves large language models (LLMs) at the decoding time, and Thresh :ear_of_rice:, an interactive tool that helps humans evaluate LLM-generated text and trace errors back to the source. We also study cultural bias in LLMs, introducing CAMel :dromedary_camel: benchmark to assess Western favoritism in LLMs across multiple tasks and languages. Findings suggest a need for greater attention to implicit biases.</li>
-              </ul>
-            </li>
-
-          </ul>
-
-          <h2 id="Papers">Accepted Papers</h2>
-            <p class="regPapers"></p>
-
-          
           <h2 id="Organizers">Organizers</h2>
-              <p>
-                You can contact the organizers by emailing
-                <a href="mailto:in2writing.workshop@gmail.com"
-                  >in2writing.workshop@gmail.com</a
-                >.
-              </p>
-              <div class="container">
-                <div class="row organizers"></div>
-              </div>
-                    <h2 id="Advisors">Advisors</h2>
-              <div class="container">
-                <div class="row advisors"></div>
-              </div>
-          
-          
-          
-      <h2 id="Call for Participation">Call for Participation</h2>
-          <div class="greyed-out">
-                <p>
-                   <h3>
-                      CFP: 4th Workshop on Intelligent and Interactive Writing Assistants (In2Writing, @NAACL’25)
-                    </h3>
-                </p>
-
-              <p><i>How can we develop technology that appropriately supports diverse writing tasks? </i> </p>
-
-              <p>
-              Writing is a critical skill in daily life and professional environments. It provides means for communicating with family, friends, and colleagues, sharing information, as well as enhancing learning and emotional well-being. However, writing can be a challenging endeavor. From language learners to journalists, almost everyone struggles in some way with the translation of amorphous ideas in our mind into coherent words on the page. For instance, writers may struggle to find appropriate phrasing, set the right tone, organize their thoughts logically, and, in general, find ways to convey their thoughts clearly in order to be properly understood.
-              </p>
-              <p>
-              Recently there has been a proliferation of computational writing assistance. Whether it be from general-purpose language models or more specifically designed tools, many people are now using writing assistants on a daily basis. There is evidence that these can improve writing skills, though the long-term impacts are yet to be determined. In addition to the development of new tools, there are important questions about the impact of these tools on individuals, communities, and language as a whole.
-              </p>
-
-              <p>
-              <i><b> Interdisciplinary perspectives:</b></i>  Answering this question touches both on the development of natural language generation 
-              technologies, as well as how those technologies are integrated into workflows and interfaces. 
-              Our workshop, now in its fourth iteration, is held alternatively at NLP and HCI venues to encourage interdisciplinary approaches. In addition to NLP and HCI research, we welcome research from fields such as the Education Sciences, English and Rhetoric, Psychology, Economics, and Linguistics.
-
-              </p>
-
-              <p>
-                In our fourth workshop, we aim to facilitate research on the following questions:
-              </p>
-              <ul>
-                <li>
-                How can we evaluate and compare writing assistants in interactive settings?
-                </li>
-                <li>
-                How can writing assistants support learning processes and learning outcomes of students?
-                </li>
-                <li>
-                How can writing assistants identify relevant axes of variation in order to suggest the most useful alternatives?
-                </li>
-                <li>
-                How do we alter existing fine-tuning and alignment methods of LLMs to suit the needs of writers with varying expertise and backgrounds?
-                </li>
-                <li>
-                With the proliferation of synthetic data methods for training LLMs, how do we combat issues of homogenization that could significantly impact assistant performance?
-                </li>
-                <li>
-                How can writing assistants become personalized, and which models of personalization work best for which writing tasks?
-                </li>
-                <li>
-                How can we develop writing assistants for underrepresented languages, types of writers, and writing tasks?
-                </li>
-                <li>
-                How can we make writing assistants more accessible and inclusive?
-                </li>
-              </ul>
-
-              <p>
-              Echoing the theme of NAACL 2025, how would writing assistance technologies be created to support writing in a large tail of under-represented languages, varieties, and cultures?
-              </p>
-
-              <h3>Diversity Award: </h3> 
-              <p>
-                Writing tools touch on diverse topics, communities, and challenges. We are especially interested in submissions that come from, study, support, or otherwise engage with underrepresented communities, cultures, and/or languages. This year, we will be awarding one paper with a Diversity Award. The recipient will get a special speaking slot in the workshop as well as a small trophy.
-              </p>
+          <p>
+            You can contact the organizers by emailing
+            <a href="mailto:in2writing.workshop@gmail.com"
+              >in2writing.workshop@gmail.com</a
+            >.
+          </p>
+          <div class="container">
+            <div class="row organizers"></div>
           </div>
 
+          <h2 id="Advisors">Advisors</h2>
+          <div class="container">
+            <div class="row advisors"></div>
+          </div>
 
+          <h2 id="Sponsors">Sponsors</h2>
+          <p>
+            Interested in supporting the workshop? We would love to hear from
+            you &mdash; please reach out to
+            <a href="mailto:in2writing.workshop@gmail.com"
+              >in2writing.workshop@gmail.com</a
+            >.
+          </p>
 
-          <h2 id="Submit">Submit</h2>
-            <div class="greyed-out">
-
-            <p>
-                    <s><b><a href="https://openreview.net/group?id=aclweb.org/NAACL/2025/Workshop/In2Writing">Submit your paper on OpenReview </a> by 28 February, 2025 11:59PM
-                          <a href="https://time.is/Anywhere_on_Earth">AoE</a></b
-                        >
-                        (no extensions!)</s>
-                  </p>
-                  <p> 
-                    We invite regular short (4-page) and long (8-page) paper submissions and system demos (4-page). Specifically, we allow three types of submissions:
-                    <ul>
-                      <li>
-                        Standard workshop papers (short or long): Submissions describing substantially original research not previously published in other venues.
-                      </li>
-                      <li>
-                        Cross-submissions: Papers on relevant topics that have previously been accepted for publication in NAACL Findings or another venue.
-                      </li>
-                      <li>
-                        Demonstration (short): Demonstrations of all forms. Can be research and academic demos, but also those of products, interesting and creative projects, and so forth. 
-                      </li>
-                    </ul>
-                </p>
-                <p>
-                The review process will be double-blind, and so submissions must not identify authors or their affiliations. Paper submissions must use the official ACL style templates, which are available as an Overleaf template and also a downloadable directly (Latex and Word). We strongly encourage participants to use the Latex template. All submissions must be in PDF format and must conform to the official style guidelines, which are contained in these template files. We allow authors to choose between an archival and non-archival submission as indicated on OpenReview. 
-                </p>
-                <p>
-                Papers that are too long or not related to the workshop topic will be desk rejected. 
-                </p>
-
-        <!--             We ask authors to follow the <a href="https://chi2024.acm.org/submission-guides/chi-publication-formats/">CHI Publication Format</a> (either <a href="https://www.acm.org/publications/proceedings-template">Latex or Word templates</a>). 1- or 2- column formats are both acceptable. The submission can be up to 1,500 words, excluding references and an appendix. The appendix can be up to four pages, but please do not expect reviewers to read it.  -->
-                  <p>
-                    Submissions must be <b>anonymized</b> for review.     
-                  </p>
-            </div>
-
-          
-          
-          
+          <br />
         </div>
-      </div> 
+      </div>
     </div>
   </body>
 </html>
