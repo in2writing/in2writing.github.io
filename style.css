@@ -101,6 +101,7 @@ a {
   margin: 1rem auto 0;
   background-color: var(--color-bg);
   margin-top: 0;
+  text-align: center;
 }
 
 /* On narrow screens the nav wraps to several lines and, while fixed, would
