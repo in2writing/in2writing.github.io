@@ -4,7 +4,15 @@ This is your site JavaScript code - you can add interactivity and carry out proc
 */
 
 
+// Listed in the same order as the UIST 2026 workshops page. This list is
+// intentionally NOT shuffled - see the render loop below.
 const organizers = [
+  {
+    'name': 'David Zhou',
+    'web': 'https://david23.web.illinois.edu',
+    'affiliation': 'University of Illinois Urbana-Champaign',
+    'headshot': 'assets/images/david_zhou.jpg?v=1732714326838'
+  },
   {
     'name': 'John Joon Young Chung',
     'web': 'https://johnr0.github.io/',
@@ -12,16 +20,16 @@ const organizers = [
     'headshot': 'assets/images/john.jpg?v=1639699115753'
   },
   {
-    'name': 'Katy Ilonka Gero',
-    'web': 'http://www.katygero.com/',
-    'affiliation': 'Harvard University',
-    'headshot': 'assets/images/katy.webp?v=1640106958395'
+    'name': 'James Eschrich',
+    'web': 'https://jaeschrich.github.io/',
+    'affiliation': 'University of Illinois Urbana-Champaign',
+    'headshot': 'assets/images/james.jpg'
   },
   {
-    'name': 'Thiemo Wambsganss',
-    'web': 'https://thiemowa.github.io',
-    'affiliation': 'Bern University of Applied Sciences',
-    'headshot': 'assets/images/Thiemo.png?v=1704977249831'
+    'name': 'Xiyu Jenny Fu',
+    'web': 'https://jennyxfu.github.io/',
+    'affiliation': 'Cornell University',
+    'headshot': 'assets/images/jenny.jpg'
   },
   {
     'name': "Ting-Hao 'Kenneth' Huang",
@@ -30,22 +38,40 @@ const organizers = [
     'headshot': 'assets/images/kenneth.jpg?v=1639691757489'
   },
   {
+    'name': 'Andrew Jelson',
+    'web': 'https://jelson.vercel.app/',
+    'affiliation': 'Virginia Tech',
+    'headshot': 'assets/images/andrew.jpeg'
+  },
+  {
+    'name': 'Seyed Parsa Neshaei',
+    'web': 'https://github.com/spneshaei',
+    'affiliation': 'EPFL',
+    'headshot': 'assets/images/parsa.jpg'
+  },
+  {
+    'name': 'Vishakh Padmakumar',
+    'web': 'https://vishakhpk.github.io/',
+    'affiliation': 'Stanford University',
+    'headshot': 'assets/images/vishakh.jpg?v=1732714421570'
+  },
+  {
     'name': 'Sarah Sterman',
     'web': 'https://ssterman.web.illinois.edu/',
     'affiliation': 'University of Illinois Urbana-Champaign',
     'headshot': 'assets/images/sarah.jpg?v=1702500794274'
   },
   {
-    'name': 'David Zhou',
-    'web': 'https://david23.web.illinois.edu',
-    'affiliation': 'University of Illinois Urbana-Champaign',
-    'headshot': 'assets/images/david_zhou.jpg?v=1732714326838'
+    'name': 'Thiemo Wambsganss',
+    'web': 'https://thiemowa.github.io',
+    'affiliation': 'Bern University of Applied Sciences',
+    'headshot': 'assets/images/Thiemo.png?v=1704977249831'
   },
   {
-    'name': 'Vishakh Padmakumar',
-    'web': 'https://vishakhpk.github.io/',
-    'affiliation': 'New York University',
-    'headshot': 'assets/images/vishakh.jpg?v=1732714421570'
+    'name': 'Zixin Zhao',
+    'web': 'https://zixin.ca',
+    'affiliation': 'University of Toronto',
+    'headshot': 'assets/images/zixin.jpeg'
   },
 ];
 
@@ -76,99 +102,23 @@ const advisors = [
   },
 ];
 
-const speakers = [
-  {
-    'name': 'Lillian-Yvonne Bertram',
-    'web': 'https://www.lillianyvonnebertram.com/',
-    'title': 'Writer/Artist/Educator',
-    'affiliation': 'Northeastern University',
-    'maxwidth': '100px',
-    'headshot': 'assets/images/lyb.jpg?v=1646341370154'
-  },
-  {
-    'name': 'Claire L. Evans',
-    'web': 'https://clairelevans.com/',
-    'title': 'Writer and Musician',
-    'maxwidth': '200px',
-    'headshot': 'assets/images/cle.jpg?v=1646341939827'
-  },
-  {
-    'name': 'Elizabeth Clark',
-    'web': 'https://homes.cs.washington.edu/~eaclark7/',
-    'title':  'Research Scientist',
-    'affiliation': 'Google NY',
-    'maxwidth': '',
-    'headshot': 'assets/images/ec.JPG?v=1646341428919'
-  },
-  {
-    'name': 'Timo Mertens',
-    'web': 'https://www.linkedin.com/in/timo-mertens-b2153bb',
-    'title': 'Head of ML & NLP Products',
-    'affiliation': 'Grammarly',
-    'maxwidth': '',
-    'headshot': 'assets/images/tm.jpg?v=1646341420798'
-  },
-  {
-    'name': 'Melissa Roemelle',
-    'web': 'https://roemmele.github.io/',
-    'title': 'Research Scientist',
-    'affiliation': 'RWS Language Weaver',
-    'headshot': 'assets/images/melissa.jpeg?v=1651003711223'
-  },
-  {
-    'name': 'Daniel Gissin',
-    'title': "Algo Team Lead",
-    'web': 'https://www.linkedin.com/in/daniel-gissin-a9771a103/',
-    'affiliation': 'AI21 Labs',
-    'headshot': 'assets/images/daniel.png?v=1642428626160'
-  },
-];
+// Keynote speakers and panelists are still being confirmed. Add entries here
+// (and a <div class="row speakers"></div> to index.html) once they are.
+const speakers = [];
 
-const pc = [
-'Jordan Huffaker, University of Michigan',
-// 'Ray Hong, George Mason University',
-'Minsuk Chang, Naver AI Lab',
-// 'Kang Min Yoo, Naver AI Lab',
-'Hwaran Lee, Naver AI Lab',
-'Risako Owan, University of Minnesota',
-'Shirley Hayati, Geogia Tech',
-// 'Libby Ferland, University of Minnesota',
-'Chieh-Yang Huang, Penn State University',
-// 'Stephanie M. Lukin, Army Research Laboratory',
-// 'Tianyi Zhang, Stanford University',
-'Alex Tamkin, Stanford University',
-'Gabriel Poesia, Stanford University',
-'Dae Hyun Kim, Stanford University',
-'Joon Park, Stanford University',
-'Alex Calderwood, UCSC',
-'Vivian Liu, Columbia University',
-'Kenneth Arnold, Calvin University',
-'Melanie Subbiah, Columbia University',
-'Chris Kedzie, Rasa',
-// 'Tuhin Chakrabarty, Columbia University',
-'Wanyu Du, University of Virginia',
-'Dhruv Kumar, Grammarly',
-'Arjun Akula, UCLA',
-'Melissa Roemmele, RWS',
-'Xinyu Hua, Bloomberg'
-  ];
-
-
-const sponsors = [
-  // "assets/images/logo-wordtune.png?v=1639672800588",
-  "assets/images/logo-grammarly.png?v=1639658086795",
-  "assets/images/Midjourney-Symbol.png?v=1739746766878"
-]
+// No sponsors confirmed for this edition yet - the Sponsors section on the page
+// invites prospective supporters to get in touch. Add logo paths here when we
+// have them.
+const sponsors = [];
 
 const sections = [
-  "Call for Participation",
-  // "Invited Speakers", 
-  "Submit", 
-  "Schedule", 
-  // "Sponsors", 
-  "Organizers", 
-  "Advisors"
-  // "Program Committee"
+  "About",
+  "Participate",
+  "Schedule",
+  "Speakers",
+  "Organizers",
+  "Advisors",
+  "Sponsors"
 ];
 const editions = [{
   "year": 2022,
@@ -181,7 +131,7 @@ const editions = [{
   "description": "@CHI 2024"
 }, {
   "year": 2025,
-  "description": "@ACL 2025"
+  "description": "@NAACL 2025"
 }
 ];
 
@@ -209,19 +159,24 @@ function shuffle(array) {
 
 $(document).ready( function() {
   
-  $.each(sections.concat(editions), function(i, sec) {
-    if (i < sections.length) {
-      var span = $("<a class='nav-header-links' href='#"+sec+"'>").text(sec);
-      $('.jumpto').append(span).append(' ');
-    }
-    else {
-      var span = $("<a href='/archive/"+sec["year"]+"'>").text(sec["description"]);
-      $('.jumpto').append(span).append(' ');  
-    }
-  })
+  // The nav has two lines: this year's sections, then links to past editions.
+  var navSections = $("<div class='w-100'>");
+  $.each(sections, function(i, sec) {
+    var link = $("<a class='nav-header-links' href='#"+sec+"'>").text(sec);
+    navSections.append(link).append(' ');
+  });
+
+  var navEditions = $("<div class='w-100 past-versions'>").append('Past versions: ');
+  $.each(editions, function(i, ed) {
+    var link = $("<a href='/archive/"+ed["year"]+"'>").text(ed["description"]);
+    navEditions.append(link).append(' ');
+  });
+
+  $('.jumpto').append(navSections).append(navEditions);
 
   
-  shuffle(organizers);
+  // Organizers are listed in a fixed order to match the UIST 2026 workshops
+  // page, so this list is deliberately not shuffled.
   $.each(organizers, function(i, person) {
     var col = $("<div class='col-sm-3 org-col'>");
     var name = $("<p class='name'>")
@@ -249,12 +204,6 @@ $(document).ready( function() {
     $('.advisors').append(col);
   });
   
-  $.each(pc, function(i, person) {
-    var li = $("<li class='pc-li'>");
-    li.append(person);
-    $('.pc').append(li);
-  });
-  
   shuffle(speakers);
   $.each(speakers, function(i, person) {
     var col = $("<div class='col-md-3 speaker-col'>");
@@ -265,7 +214,6 @@ $(document).ready( function() {
     var title = $("<p class='speakertitle'>").append(person.title)
     var headshot = $("<img class='img-thumbnail speakerheadshot'>");
     headshot.attr('src', person.headshot);
-    // headshot.attr('style', 'max-width:'+person.maxwidth);
     var affiliation = $("<p class='affiliation'>").append(person.affiliation);
     col.append(headshot).append(name).append(title).append(affiliation);
     $('.speakers').append(col);

@@ -16,7 +16,7 @@ to this section's matching END comment to see page-specific styles.
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #FBFAEE; /*#FBF3EE;*/
+  --color-bg: #F7F4FC; /* very light violet; was #FBFAEE cream */
   --color-text-main: #000000;
   --color-primary: #FF6392;  
   --color-secondary: #FFE45E;  
@@ -101,6 +101,14 @@ a {
   margin: 1rem auto 0;
   background-color: var(--color-bg);
   margin-top: 0;
+}
+
+/* On narrow screens the nav wraps to several lines and, while fixed, would
+   overlap the logo. Let it scroll with the page instead. */
+@media (max-width: 767px) {
+  .jumpto {
+    position: static;
+  }
 }
 
 /* Subheading */
@@ -225,5 +233,5 @@ td {
 }
 
 tr:nth-child(odd) {
-  background-color: #f2f2f2;
+  background-color: #EDE7F8;
 }
